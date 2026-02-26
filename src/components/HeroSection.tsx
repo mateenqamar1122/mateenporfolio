@@ -188,14 +188,14 @@ const HeroSection = () => {
         {/* Portrait image - absolutely positioned, allowed to overflow below the card */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
+          animate={{ opacity: 1, scale: 1, x: '-58%' }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 pointer-events-none"
+          className="absolute bottom-0 left-1/2 z-20 pointer-events-none"
         >
           <img
             src={developerImg}
             alt="Developer portrait"
-            className="h-[35vh] sm:h-[40vh] md:h-[55vh] lg:h-[60vh] xl:h-[65vh] max-w-[45%] sm:max-w-[40%] md:max-w-none w-auto object-contain object-bottom"
+            className="h-[35vh] sm:h-[40vh] md:h-[55vh] lg:h-[60vh] xl:h-[65vh] w-auto object-contain object-bottom"
           />
         </motion.div>
       </div>
