@@ -1,3 +1,4 @@
+
 import { ArrowUpRight, Code2, Layers, Sparkles, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
@@ -49,8 +50,8 @@ const AboutSection = () => {
               className="border border-border rounded-2xl p-6 md:p-8 text-center group hover:bg-primary hover:border-primary transition-all duration-500"
             >
               <p
-                className="text-4xl md:text-5xl font-black group-hover:text-primary-foreground transition-colors duration-500"
-                style={{ fontFamily: 'var(--font-display)', color: 'hsl(var(--primary))' }}
+                className="text-4xl md:text-5xl font-black text-primary group-hover:text-primary-foreground transition-colors duration-500"
+                style={{ fontFamily: 'var(--font-display)' }}
               >
                 {stat.value}
               </p>
