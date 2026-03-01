@@ -31,7 +31,7 @@ const SkillsSection = () => {
 
         {/* Left info card */}
         <AnimatedSection delay={0.05} className="col-span-12 md:col-span-3">
-          <div className="h-full rounded-2xl bg-card border border-border p-5 md:p-6 flex flex-col justify-between min-h-[200px]">
+          <div className="h-full rounded-2xl bg-card border border-border p-5 md:p-6 flex flex-col justify-between min-h-[200px] transition-all duration-300 hover:shadow-[0_0_15px_hsl(var(--primary)/0.3)] hover:border-primary/40">
             <div>
               <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1" style={{ fontFamily: "var(--font-body)" }}>A Web Developer</p>
               <h3 className="text-2xl md:text-3xl font-black text-foreground leading-tight mb-3" style={{ fontFamily: "var(--font-display)" }}>
@@ -64,7 +64,7 @@ const SkillsSection = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="rounded-2xl bg-card border border-border flex flex-col items-center justify-center aspect-square hover:border-primary/50 hover:bg-primary/5 transition-colors p-2"
+                className="rounded-2xl bg-card border border-border flex flex-col items-center justify-center aspect-square transition-all duration-300 p-2 hover:shadow-[0_0_15px_hsl(var(--primary)/0.3)] hover:border-primary/40"
               >
                 {item.icon}
                 <span className="text-foreground text-[10px] md:text-xs font-semibold mt-1.5" style={{ fontFamily: "var(--font-body)" }}>{item.label}</span>
@@ -76,7 +76,7 @@ const SkillsSection = () => {
 
         {/* "Building Skills For Future" text */}
         <AnimatedSection delay={0.15} className="col-span-6 md:col-span-6">
-          <div className="h-full rounded-2xl bg-card border border-border p-6 md:p-8 flex items-center min-h-[200px]">
+          <div className="h-full rounded-2xl bg-card border border-border p-6 md:p-8 flex items-center min-h-[200px] transition-all duration-300 hover:shadow-[0_0_15px_hsl(var(--primary)/0.3)] hover:border-primary/40">
             <h3
               className="text-3xl md:text-5xl lg:text-6xl font-black leading-[1.05]"
               style={{ fontFamily: "var(--font-display)", color: "hsl(var(--primary))" }}
@@ -90,7 +90,7 @@ const SkillsSection = () => {
 
         {/* Skills icon grid card */}
         <AnimatedSection delay={0.2} className="col-span-5 md:col-span-3">
-          <div className="h-full rounded-2xl bg-card border border-border p-4 md:p-5 flex flex-col justify-between min-h-[200px]">
+          <div className="h-full rounded-2xl bg-card border border-border p-4 md:p-5 flex flex-col justify-between min-h-[200px] transition-all duration-300 hover:shadow-[0_0_15px_hsl(var(--primary)/0.3)] hover:border-primary/40">
             <div className="grid grid-cols-4 gap-2 mb-4">
               {skillSvgs.map((skill, i) => (
                 <motion.div
@@ -120,7 +120,7 @@ const SkillsSection = () => {
 
         {/* Showcase Projects card */}
         <AnimatedSection delay={0.25} className="col-span-7 md:col-span-5">
-          <div className="h-full rounded-2xl bg-card border border-border p-4 md:p-5 flex flex-col justify-between min-h-[200px] overflow-hidden relative">
+          <div className="h-full rounded-2xl bg-card border border-border p-4 md:p-5 flex flex-col justify-between min-h-[200px] overflow-hidden relative transition-all duration-300 hover:shadow-[0_0_15px_hsl(var(--primary)/0.3)] hover:border-primary/40">
             <div className="absolute top-3 left-0 right-0 flex justify-center pointer-events-none">
               <span className="text-2xl md:text-4xl font-black uppercase tracking-wider text-muted-foreground/10 whitespace-nowrap" style={{ fontFamily: "var(--font-display)" }}>
                 MY WORKS &nbsp; MY WORKS
@@ -128,11 +128,11 @@ const SkillsSection = () => {
             </div>
             <div className="flex-1 flex items-center justify-center mb-3 relative z-10">
               <div className="flex items-end gap-2">
-                <div className="w-28 h-20 md:w-40 md:h-24 rounded-lg bg-secondary border border-border overflow-hidden shadow-lg">
-                  <img src={projectShowcase1} alt="Project showcase 1" className="w-full h-full object-cover" />
+                <div className="w-28 h-20 md:w-40 md:h-24 rounded-lg border border-border overflow-hidden shadow-lg">
+                  <img src={projectShowcase1} alt="Project showcase 1" className="w-full h-full object-cover mix-blend-multiply dark:mix-blend-screen invert" />
                 </div>
-                <div className="w-28 h-20 md:w-40 md:h-24 rounded-lg bg-secondary border border-border overflow-hidden shadow-lg -ml-8 mb-2">
-                  <img src={projectShowcase2} alt="Project showcase 2" className="w-full h-full object-cover" />
+                <div className="w-28 h-20 md:w-40 md:h-24 rounded-lg border border-border overflow-hidden shadow-lg -ml-8 mb-2">
+                  <img src={projectShowcase2} alt="Project showcase 2" className="w-full h-full object-cover mix-blend-multiply dark:mix-blend-screen invert" />
                 </div>
               </div>
             </div>
@@ -150,7 +150,7 @@ const SkillsSection = () => {
 
         {/* Tech Stack card */}
         <AnimatedSection delay={0.3} className="col-span-12 md:col-span-4">
-          <div className="h-full rounded-2xl bg-card border border-border p-4 md:p-5 flex flex-col justify-between min-h-[200px] overflow-hidden">
+          <div className="h-full rounded-2xl bg-card border border-border p-4 md:p-5 flex flex-col justify-between min-h-[200px] overflow-hidden transition-all duration-300 hover:shadow-[0_0_15px_hsl(var(--primary)/0.3)] hover:border-primary/40">
             <div className="flex-1 flex flex-col items-center justify-center mb-3 gap-3">
               <div className="grid grid-cols-3 gap-2 w-full">
                 {[
